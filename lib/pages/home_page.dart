@@ -18,13 +18,33 @@ class _HomePageState extends State<HomePage> {
           child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
+          const Icon(
+            Icons.person, 
+            size: 100,
+          ),
           Text("Signed! ${user.email!}"),
-          MaterialButton(onPressed: () {
-            FirebaseAuth.instance.signOut();
-          },
-          color: Colors.deepPurple[200],
-          child: const Text("Sign out!"),
-          )
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 25.0),
+            child: GestureDetector(
+              onTap: () => FirebaseAuth.instance.signOut(),
+              child: Container(
+                padding: const EdgeInsets.all(20),
+                decoration: BoxDecoration(
+                  color: Colors.red[600],
+                  borderRadius: BorderRadius.circular(30),
+                ),
+                child: const Center(
+                  child: Text(
+                    'Sign out!',
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 18),
+                  ),
+                ),
+              ),
+            ),
+          ),
         ],
       )),
     );
