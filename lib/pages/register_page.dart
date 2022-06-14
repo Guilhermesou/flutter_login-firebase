@@ -71,7 +71,7 @@ class _RegisterPageState extends State<RegisterPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[300],
+      backgroundColor: Colors.grey[100],
       body: SafeArea(
         child: Center(
           child: SingleChildScrollView(
@@ -79,7 +79,7 @@ class _RegisterPageState extends State<RegisterPage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  'Welcome to Note YourSelf!',
+                  'Welcome!',
                   style: GoogleFonts.bebasNeue(
                     fontWeight: FontWeight.bold,
                     fontSize: 36,
@@ -101,7 +101,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   padding: const EdgeInsets.symmetric(horizontal: 25.0),
                   child: Container(
                     decoration: BoxDecoration(
-                        color: Colors.grey[200],
+                        color: Colors.grey[300],
                         border: Border.all(color: Colors.white),
                         borderRadius: BorderRadius.circular(12)),
                     child: Padding(
@@ -123,7 +123,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   padding: const EdgeInsets.symmetric(horizontal: 25.0),
                   child: Container(
                     decoration: BoxDecoration(
-                        color: Colors.grey[200],
+                        color: Colors.grey[300],
                         border: Border.all(color: Colors.white),
                         borderRadius: BorderRadius.circular(12)),
                     child: Padding(
@@ -145,7 +145,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   padding: const EdgeInsets.symmetric(horizontal: 25.0),
                   child: Container(
                     decoration: BoxDecoration(
-                        color: Colors.grey[200],
+                        color: Colors.grey[300],
                         border: Border.all(color: Colors.white),
                         borderRadius: BorderRadius.circular(12)),
                     child: Padding(
@@ -167,7 +167,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   padding: const EdgeInsets.symmetric(horizontal: 25.0),
                   child: Container(
                     decoration: BoxDecoration(
-                        color: Colors.grey[200],
+                        color: Colors.grey[300],
                         border: Border.all(color: Colors.white),
                         borderRadius: BorderRadius.circular(12)),
                     child: Padding(
@@ -190,7 +190,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   padding: const EdgeInsets.symmetric(horizontal: 25.0),
                   child: Container(
                     decoration: BoxDecoration(
-                        color: Colors.grey[200],
+                        color: Colors.grey[300],
                         border: Border.all(color: Colors.white),
                         borderRadius: BorderRadius.circular(12)),
                     child: Padding(
@@ -214,7 +214,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   padding: const EdgeInsets.symmetric(horizontal: 25.0),
                   child: Container(
                     decoration: BoxDecoration(
-                        color: Colors.grey[200],
+                        color: Colors.grey[300],
                         border: Border.all(color: Colors.white),
                         borderRadius: BorderRadius.circular(12)),
                     child: Padding(
@@ -241,8 +241,8 @@ class _RegisterPageState extends State<RegisterPage> {
                     child: Container(
                       padding: const EdgeInsets.all(20),
                       decoration: BoxDecoration(
-                        color: Colors.deepPurple,
-                        borderRadius: BorderRadius.circular(12),
+                        color: Colors.red[600],
+                        borderRadius: BorderRadius.circular(30),
                       ),
                       child: const Center(
                         child: Text(
